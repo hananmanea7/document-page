@@ -1,11 +1,41 @@
-a{
-    color: rgb(172, 170, 170);
+#main {
+    display: grid;
+    grid-template-columns: minmax(320px, auto)1fr;
+    grid-template-areas: "navbar";
+    grid-gap: 20px;
+    font-family: sans-serif;
 }
-.content{
 
+#nav_bar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-size: 22px;
+    margin-top: 24px;
 }
-main{
-    position: absolute;
-    margin-left: 30%;
 
+#nav_bar a {
+    color: gray;
+}
+
+#nav_bar li {
+    list-style-type: none;
+    line-height: 40px;
+}
+
+header, h1 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+code {
+    display: block;
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+section p {
+    line-height: 25px;
 }
